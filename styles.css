@@ -4,6 +4,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0a0f1e;
     color: white;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    overflow-y: auto;    /* Allow vertical scroll only if necessary */
 }
 
 /* Navigation Bar */
@@ -90,6 +92,7 @@ nav ul li a:hover {
     height: 100%;
     background-image: url('https://raw.githubusercontent.com/d3vilishd3tails/BAE/main/images/techwave.png');
     background-size: cover;
+    background-position: center;
     opacity: 0.9;
     pointer-events: none;
 }
@@ -124,12 +127,12 @@ nav ul li a:hover {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 5px;
-    width: 300%; /* Extending beyond the viewport for more dramatic effect */
-    height: 300vh; /* Allowing more overflow for depth */
+    width: 100%; /* Use 100% to make it fit */
+    height: 100vh; /* Limit height to viewport */
     position: absolute;
-    right: -100%; /* Increasing offset for better angle placement */
-    bottom: -100%; /* Adjusting positioning to fill the screen diagonally */
-    transform: rotate(-25deg); /* Tilting the grid more aggressively */
+    right: 0; /* Adjust as needed */
+    bottom: 0;
+    transform: rotate(-25deg); /* Keep rotation for the effect */
     z-index: 1;
 }
 .image-grid .grid-item {
