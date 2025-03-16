@@ -19,9 +19,8 @@ header {
     position: relative;
     z-index: 2;
 }
-.logo img {
-    height: 80px; max-width: 200px;
-    content: url('images/logo.png'); /* Ensure the correct path */
+.logo {
+    background-image: url('images/logo.png');
 }
 nav ul {
     display: flex;
