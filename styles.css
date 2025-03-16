@@ -92,8 +92,7 @@ nav ul li a:hover {
     height: 100%;
     background-image: url('https://raw.githubusercontent.com/d3vilishd3tails/BAE/main/techwave.png');
     background-size: cover;
-    background-position: center;
-    opacity: 0.9;
+    opacity: 1;
     pointer-events: none;
 }
 
@@ -119,53 +118,6 @@ nav ul li a:hover {
     line-height: 1.6;
     color: #f0c674;
     max-width: 80%;
-}
-
-/* Image Grid Section */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    gap: 5px;
-    width: 100%; /* Use 100% to make it fit */
-    height: 100vh; /* Limit height to viewport */
-    position: absolute;
-    right: 0; /* Adjust as needed */
-    bottom: 0;
-    transform: rotate(-25deg); /* Keep rotation for the effect */
-    z-index: 1;
-}
-.image-grid .grid-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #00bfff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #00bfff;
-    backdrop-filter: blur(2px); /* Subtle blur effect */
-    background-size: cover;
-    background-position: center;
-}
-.image-grid .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.image-grid .grid-item::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://raw.githubusercontent.com/d3vilishd3tails/BAE/main/images/placeholder.png'); /* Placeholder image */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
 }
 
 {
